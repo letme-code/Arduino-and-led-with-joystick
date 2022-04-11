@@ -26,11 +26,6 @@ void setup() {
 void loop() {
 x_durum = analogRead(x_ekseni);
 y_durum = analogRead(y_ekseni);
-Serial.print("X DURUMU: ");
-Serial.println(x_durum);
-Serial.print("Y DURUMU: ");
-Serial.println(y_durum);
-Serial.println("__________________________");
 
 if(degisimAlgi != xPozisyon){
   digitalWrite(8, HIGH);
